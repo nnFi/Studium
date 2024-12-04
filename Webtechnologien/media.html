@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Webtechnologien 27</title>
+    <style>
+        #c1 {
+            background-color: blue;
+        }
+        #c2 {
+            background-color: orange;
+        }
+        #c3 {
+            background-color: green;
+        }
+        #c4 {
+            background-color: fuchsia;
+        }
+        #c5 {
+            background-color: yellow;
+        }
+        #c6 {
+            background-color: lightskyblue;
+        }
+
+        @media screen and (min-width: 1024px) {
+            div {
+                border: 2px solid black;
+                width: 300px;
+                height: 300px;
+            }
+
+            img {width: 300px;}
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 1023px) {
+            div {
+                border: 2px solid black;
+                width: 200px;
+                height: 200px;
+            }
+
+            img {width: 200px;}
+        }
+
+        @media screen and (max-width: 480px) {
+            div {
+                border: 2px solid black;
+                width: 100px;
+                height: 100px;
+            }
+
+            img {width: 100px;}
+        }
+    </style>
+</head>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><div id="c1"></div></td>
+            <td><div id="c2"></div></td>
+        </tr>
+        <tr>
+            <td><div id="c3"></div></td>
+            <td><div id="c4"></div></td>
+        </tr>
+        <tr>
+            <td><div id="c5"></div></td>
+            <td><div id="c6"></div></td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="images/bild-green.png" alt="">
+    <img src="images/bild-green.png" alt="">
+    <br>
+    <img src="images/bild-green.png" alt="">
+    <img src="images/bild-green.png" alt="">
+    <br>
+    <img src="images/bild-green.png" alt="">
+    <img src="images/bild-green.png" alt="">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <td><img src="images/bild-green.png" alt=""></td>
+            <td><img src="images/bild-green.png" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="images/bild-green.png" alt=""></td>
+            <td><img src="images/bild-green.png" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="images/bild-green.png" alt=""></td>
+            <td><img src="images/bild-green.png" alt=""></td>
+        </tr>
+    </table>
+</body>
+</html>

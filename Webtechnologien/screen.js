@@ -1,0 +1,13 @@
+document.write("width: ", screen.width);
+document.write("<br>");
+document.write("height: ", screen.height);
+document.write("<br>");
+document.write("availHeight: ", screen.availHeight);
+document.write("<br>");
+document.write("availWidth: ", screen.availWidth);
+document.write("<br>");
+document.write("colorDepth: ", screen.colorDepth);
+document.write("<br>");
+document.write("orientation: ", screen.orientation);
+document.write("<br>");
+document.write("pixelDepth: ", screen.pixelDepth);

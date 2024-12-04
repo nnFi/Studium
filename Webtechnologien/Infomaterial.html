@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Webtechnologien 10</title>
+</head>
+<body>
+    <form name = "infomaterial" action="">
+        <h2>Infomaterial</h2>
+        <p>Bitte senden Sie mir Informationsmaterial!</p>
+
+        <table>
+            <tr>
+                <td><label for="s1">Anrede:</label></td>
+                <td>
+                    <select name="Anrede" id="s1" required autofocus>
+                        <option value="Familie">Familie</option>
+                        <option value="Herr">Herr</option>
+                        <option value="Frau">Frau</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="i1">Name:</label></td>
+                <td><input type="text" name="Name" id="i1" placeholder="Ihr Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="i5">E-Mail:</label></td>
+                <td><input type="email" name="mail" id="i5" required></td>
+            </tr>
+            <tr>
+                <td><label for="i2">Straße:</label></td>
+                <td><input type="text" name="Straße" id="i2" required></td>
+            </tr>
+            <tr>
+                <td><label for="i3">PLZ:</label></td>
+                <td><input type="number" name="PLZ" id="i3" min="10000" max="99999" required></td>
+            </tr>
+            <tr>
+                <td><label for="i4">Ort:</label></td>
+                <td><input type="text" name="Ort" id="i4" required></td>
+            </tr>
+        </table>
+
+        <p>
+            <label> Ich beabsichtige einen Aufenthalt:
+                <br>
+                <input type="radio" name="Winter" id="r1">
+                <label for="r1">im Winter</label>
+                <br>
+                <input type="radio" name="Winter" id="r2">
+                <label for="r2">im Sommer</label>
+                <br>
+                <label for="i6">Anreise:</label>
+                <input type="date" name="anreise" id="i6" required>
+                <br>
+                <label for="i7">Abreise:</label>
+                <input type="date" name="abreise" id="i7" required>
+            </label>
+        </p>
+
+        <p>
+            <label for="t1">Ich habe folgende Wünsche:</label>
+            <br>
+            <textarea name="wuensche" id="t1" cols="30" rows="10" placeholder="Was kann ich für Sie tun"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="absenden">
+            <input type="reset" value="Formular leeren">
+        </p>
+    </form>
+</body>
+</html>

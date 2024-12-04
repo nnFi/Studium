@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Webtechnologien</title>
+</head>
+</head>
+<body>
+    <figure>
+        <img id="bild" src="images/bild-green.png" style="width: 20%; border-radius: 10px;" onmouseover="changeImage()" onmouseleave="originalImage()" onclick="beschriftung()">
+        <!-- onmouseleave oder onmouseout -->
+        <figcaption id="caption"></figcaption>
+    </figure>
+    <a href="javascript:rand()">Click Me!</a>
+    <script>
+        let bild = document.getElementById("bild");
+        let caption = document.getElementById("caption");
+
+        function changeImage() {
+            bild.src = "images/bild-yellow.png"
+        }
+        function originalImage() {
+            bild.src = "images/bild-green.png"
+        }
+
+        function beschriftung() {
+            const besch = prompt("Beschriftung eingeben");
+            caption.innerHTML = besch;
+        }
+
+        function rand() {
+            if (confirm("Soll Rand?")) {
+                bild.style.border = "3px solid red";
+                bild.style.borderRadius = "10px";
+            } else {
+                bild.style.border = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Webtechnologien 22</title>
+    <style>
+        img {
+            width: 10%;
+            position: absolute;
+        }
+        :hover
+        #b1 {
+            z-index: 1;
+        }
+
+        #b2 {
+            z-index: 2;
+            top: 20px;
+            left: 20px;
+        }
+
+        #b3 {
+            z-index: 3;
+            top: 40px;
+            left: 40px;
+        }
+
+        #b1:hover, #b2:hover, #b3:hover {
+            z-index: 4;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div>
+        <img src="images/bild.png" alt="" id="b1">
+        <img src="images/bild-green.png" alt="" id="b2">
+        <img src="images/bild-yellow.png" alt="" id="b3">
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Webtechnologien 15</title>
+    <style>
+        ul {
+            color: red;
+            list-style-type: square;
+        }
+
+        ul ul {
+            list-style-type: circle;
+            color: green;
+        }
+
+        ol {
+            color: blue;
+            list-style-type: upper-alpha;
+        }
+
+        ol ol {
+            color: orange;
+            list-style-type: decimal;
+        }
+
+        li::marker {
+            color: blueviolet;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <h1>Ungeordnete Liste</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit</li>
+        <li>amet, consectetuer adipiscing elit</li>
+        <li>
+            Aenan commodo ligula eget dolor
+            <ul>
+                <li>Ich bin ein Unterpunkt</li>
+                <li>Ich auch!</li>
+            </ul>
+        </li>
+        <li>Aenan massa</li>
+    </ul>
+    <h1>Geordnete Liste</h1>
+    <ol>
+        <li>Cum sociis natoque</li>
+        <li>
+            penatibus et magnis
+            <ol>
+                <li>Ich bin ein Unterpunkt</li>
+                <li>Ich auch!</li>
+            </ol>
+        </li>
+        <li>dis parturient montes, nascetur ridiculus mus</li>
+        <li>Donec quam</li>
+    </ol>
+</body>
+</html>

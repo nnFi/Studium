@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Webtechnologien</title>
+</head>
+</head>
+<body>
+    <h1>BMI berechnen</h1>
+    <form name="bmi">
+        <p>Zur Berechnung Ihres BMI (body mass index) benötigen wir folgende Aufgaben:</p>
+        <label for="kg">Gewicht:</label>
+        <input id="kg" type="text" value="">
+        <br>
+        <label for="cm">Größe:</label>
+        <input id="cm" type="text" value="">
+        <button onclick="bmi()">berechnen</button>
+        <button onclick="leeren()">leeren</button>
+        <br>
+        <label for="ausgabe">BMI:</label>
+        <input id="ausgabe" type="text" value="" readonly>
+    </form>
+    <!-- Form funktioniert nicht richtig in Firefox -->
+    <script>
+        function bmi () {
+            let cm = document.getElementById("cm").value;
+            let kg = document.getElementById("kg").value;
+            if (cm <= 0 || kg <= 0 || cm > 300 || kg > 300 || isNaN(cm) || isNaN(kg)) {
+                alert("ungültige Eingabe");
+            } else {
+                const bmi = kg / ((cm/100) * (cm/100));
+                document.getElementById("ausgabe").value = bmi;
+            }
+        }
+        function leeren() {
+            document.getElementById("ausgabe").value = "";
+            document.getElementById("cm").value = "";
+            document.getElementById("kg").value = "";
+        }
+    </script>
+</body>
+</html>

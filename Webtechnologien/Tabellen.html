@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Finn Plassmeier" />
+    <meta name="description" content="Hier könnte eine Beschreibung stehen" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Webtechnologien 6</title>
+</head>
+<body>
+    <div id="inputForm" >
+        <label for="firstEntry">Erster Eintrag:</label>
+        <input type="text" id="firstEntry"> <br>
+        <label for="secondEntry">Zweiter Eintrag:</label>
+        <input type="text" id="secondEntry"> <br>
+        <label for="thirdEntry">Dritter Eintrag:</label>
+        <input type="text" id="thirdEntry"> <br>
+        <button onclick="addData()">Add</button>
+        <button onclick="deleteData()">Delete</button>
+    </div>
+    <table id="table">
+        <tr>
+            <th>Berlin</th>
+            <th>Hamburg</th>
+            <th>München</th>
+        </tr>
+        <tr>
+            <td>Miljöh</td>
+            <td>Kiez</td>
+            <td>Bierdampf</td>
+        </tr>
+        <tr>
+            <td>Buletten</td>
+            <td>Frikadellen</td>
+            <td>Fleischpflanzerl</td>
+        </tr>
+    </table>
+    <button onclick="gotoTable()">Go To</button>
+    <script src="script.js"></script>
+</body>
+</html>
